@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+    display: block;
+}
+ 
+* html .clearfix {
+    height: 1%;
+}
+
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+    
+}
+
+header, footer{
+    
+    text-align: center;
+}
+
+/* -- grid styles -- */
+
+.col-container{
+    border: 3px solid darkcyan;
+    width: 100%;
+}
+
+.col-2{
+    margin: 2rem 0;
+    background: yellow;
+}
+
+@media screen and (min-width: 600px){
+    .col-2{
+        width: 50%;
+        float: left;
+        padding: 2rem;
+    }
+}
+    
+    
+    
+    
+    /*600 pixels wide col2 each column 50% wide and float left. */
+    
